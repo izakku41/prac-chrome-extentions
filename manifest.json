@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "name": "hello world!",
+    "content_scripts": [
+      {
+        "matches":    ["http://www.google.com/*"],
+        "css": ["mystyle.css"],
+        "js": ["popup.js"]
+      }
+    ],
+    "version" : "1.0.12.3456",
+    "description": "display 'hello world!'.",
+    "browser_action": {
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "tabs",
+        "clipboardWrite"
+    ]
+}
